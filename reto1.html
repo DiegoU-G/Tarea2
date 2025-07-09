@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="favicon.png" rel="icon">
+    <title>Factura Digital</title>
+    <link rel="stylesheet" href="css/reto1.css">
+</head>
+
+<header class="header">
+
+        <div class="logo">
+            <h1>Facturas</h1>
+        </div>
+        
+            <ul>
+                <button class="next" id="next"><a href="/reto2.html">Reto 2</a></button>
+            </ul>
+
+</header>
+
+
+<body>
+    <div class="container">
+        <h1>Factura Digital</h1>
+        <form id="facturaForm">
+            <label for="nombreCliente">Nombre del Cliente:</label>
+            <input type="text" id="nombreCliente" required>
+            
+            <label for="articulo">Artículo:</label>
+            <input type="text" id="articulo" required>
+            
+            <label for="cantidad">Cantidad:</label>
+            <input type="number" id="cantidad" min="1" required>
+            
+            <label for="precio">Precio Unitario:</label>
+            <input type="number" id="precio" step="0.01" min="0" required>
+            
+            <button type="button" id="calcularBtn">Calcular Factura</button>
+        </form>
+
+        <div id="facturaResult" class="hidden">
+            <h2>Detalle de Factura</h2>
+            <div id="clienteInfo"></div>
+            <table id="detalleFactura">
+                <tr>
+                    <th>Concepto</th>
+                    <th>Valor</th>
+                </tr>
+                <tr>
+                    <td>Artículo:</td>
+                    <td id="articuloInfo"></td>
+                </tr>
+                <tr>
+                    <td>Cantidad:</td>
+                    <td id="cantidadInfo"></td>
+                </tr>
+                <tr>
+                    <td>Precio Unitario:</td>
+                    <td id="precioInfo"></td>
+                </tr>
+                <tr>
+                    <td>Subtotal:</td>
+                    <td id="subtotalInfo"></td>
+                </tr>
+                <tr>
+                    <td>IVA (13%):</td>
+                    <td id="ivaInfo"></td>
+                </tr>
+                <tr>
+                    <td>Servicio (5%):</td>
+                    <td id="servicioInfo"></td>
+                </tr>
+                <tr>
+                    <td><strong>Total a Pagar:</strong></td>
+                    <td><strong id="totalInfo"></strong></td>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <h4 class="derechos">Derechos de autor 2025/ / / 
+                    <p>Diego Umaña Garita</p>
+                </h4>
+
+            
+            </div>
+
+
+        </div>
+    </footer>
+
+    
+    <script src="/js/reto1.js"></script>
+</body>
+</html>

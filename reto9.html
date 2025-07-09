@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Demostración de Votación en Línea</title>
+    <link rel="stylesheet" href="css/reto9.css">
+</head>
+
+<header class="header">
+
+        <div class="logo">
+            <h1>Facturas</h1>
+        </div>
+        
+            <ul>
+                <button class="next" id="next"><a href="/reto10.html">Reto 10</a></button>
+            </ul>
+
+</header>
+
+<body>
+    <div class="contenedor-principal">
+        <h1>Votación en Línea - Demostración</h1>
+
+        <div class="seccion-votacion">
+            <h2>Emitir Tu Voto</h2>
+            <div class="grupo-formulario">
+                <label for="nombreCompleto">Nombre Completo:</label>
+                <input type="text" id="nombreCompleto" placeholder="Ej. Juan Pérez García">
+            </div>
+            <div class="grupo-formulario">
+                <label for="cedula">Cédula:</label>
+                <input type="text" id="cedula" placeholder="Ej. 1-2345-6789">
+            </div>
+            <div class="grupo-formulario">
+                <label for="correoElectronico">Correo Electrónico:</label>
+                <input type="email" id="correoElectronico" placeholder="Ej. tu.correo@ejemplo.com">
+            </div>
+            <div class="grupo-formulario">
+                <label for="fechaNacimiento">Fecha de Nacimiento:</label>
+                <input type="date" id="fechaNacimiento">
+            </div>
+
+            <div class="grupo-formulario grupo-opciones-voto">
+                <label>Selecciona tu candidato:</label>
+                <div>
+                    <input type="radio" id="candidatoA" name="opcionVoto" value="Candidato A">
+                    <label for="candidatoA">Candidato A</label>
+                </div>
+                <div>
+                    <input type="radio" id="candidatoB" name="opcionVoto" value="Candidato B">
+                    <label for="candidatoB">Candidato B</label>
+                </div>
+            </div>
+
+            <button id="botonVotar">Emitir Voto</button>
+            <p id="mensajeVoto" class="mensaje"></p>
+        </div>
+
+        <div class="seccion-reporte">
+            <h2>Reporte de Votos</h2>
+            <button id="botonMostrarReporte">Mostrar Reporte de Votos</button>
+            <div class="resultados-reporte" id="resultadosReporte">
+                <p class="resumen-votos">Total de Votos: <span id="totalVotos">0</span></p>
+                <p class="resumen-votos">Votos por Candidato A: <span id="votosCandidatoA">0</span></p>
+                <p class="resumen-votos">Votos por Candidato B: <span id="votosCandidatoB">0</span></p>
+
+                <h3>Detalle de Votantes:</h3>
+                <ul id="listaVotantes">
+                    <li>No hay votos registrados aún.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <h4 class="derechos">Derechos de autor 2025/ / / 
+                    <p>Diego Umaña Garita</p>
+                </h4>
+
+            
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="/js/reto9.js"></script>
+</body>
+</html>

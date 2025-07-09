@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mapa Interactivo del Sistema Solar</title>
+    <link rel="stylesheet" href="css/reto7.css">
+</head>
+<!--PROBLEMA CON EL HEADER SOLO EN ESTA PAGINA-->
+<header class="header">
+
+        <div class="logo">
+            <h1>Sistema Solar</h1>
+        </div>
+        
+            <ul>
+                <button class="next" id="next"><a href="/reto8.html">Reto 8</a></button>
+            </ul>
+
+<body>
+    <div class="contenedor-principal">
+        <h1>Explora el Sistema Solar</h1>
+        <p class="instruccion">Haz clic en cada planeta (A, B, C, D, E) para conocer más sobre él.</p>
+
+        <div class="mapa-interactivo-contenedor">
+            <img src="/img/sistemasolar.jpg" alt="Mapa del Sistema Solar" usemap="#sistemaSolarMap" class="imagen-mapa">
+
+
+            <map name="sistemaSolarMap">
+                <!-- Área 1: Sol (Etiqueta A) -->
+                <area shape="circle" coords="100,300,50" href="#" alt="Sol" id="areaA"
+                      data-titulo="El Sol"
+                      data-descripcion="El Sol es la estrella central de nuestro Sistema Solar. Es una esfera de plasma caliente, que irradia energía en forma de luz y calor. Su gravedad mantiene a todos los planetas en órbita.">
+
+                <!-- Área 2: Mercurio (Etiqueta B) -->
+                <area shape="circle" coords="150,250,15" href="#" alt="Mercurio" id="areaB"
+                      data-titulo="Mercurio"
+                      data-descripcion="Mercurio es el planeta más pequeño y cercano al Sol. Tiene una superficie rocosa y llena de cráteres, similar a la Luna. Sus temperaturas extremas varían drásticamente entre el día y la noche.">
+
+                <!-- Área 2: Venus(Etiqueta B) -->
+                <area shape="circle" coords="200,250,25" href="#" alt="Venus" id="areaC"
+                        data-titulo="venus"
+                        data-descripcion="Venus, el segundo planeta desde el Sol, es conocido por ser el planeta más caliente de nuestro sistema solar.">
+
+                <!-- Área 3: Tierra (Etiqueta C) -->
+                <area shape="circle" coords="305,250,28" href="#" alt="Tierra" id="areaD"
+                      data-titulo="La Tierra"
+                      data-descripcion="La Tierra es el tercer planeta desde el Sol y el único conocido por albergar vida. Se caracteriza por sus vastos océanos de agua líquida y una atmósfera rica en oxígeno, que lo hacen habitable.">
+
+                <!-- Área 4: Marte (Etiqueta D) -->
+                <area shape="circle" coords="355,250,20" href="#" alt="Marte" id="areaD"
+                      data-titulo="Marte"
+                      data-descripcion="Marte, conocido como el 'Planeta Rojo', es el cuarto planeta desde el Sol. Su superficie es desértica y rocosa, con casquetes polares de hielo. Ha sido objeto de intensa exploración en busca de signos de vida.">
+
+                <!-- Área 5: Júpiter (Etiqueta E) -->
+                <area shape="circle" coords="405,250,55" href="#" alt="Júpiter" id="areaE"
+                      data-titulo="Júpiter"
+                      data-descripcion="Júpiter es el planeta más grande de nuestro Sistema Solar, un gigante gaseoso. Es famoso por su Gran Mancha Roja, una tormenta gigante que ha estado activa durante siglos. Tiene un sistema de anillos y muchas lunas.">
+                <!-- Área 5: Saturno (Etiqueta D) -->
+                <area shape="circle" coords="505,250,55" href="#" alt="sATURNO" id="areaD"
+                      data-titulo="Saturno"
+                      data-descripcion="Saturno es el sexto planeta desde el Sol y el segundo más grande del sistema solar.">
+                <!-- Área 5: Urano (Etiqueta F) -->
+                <area shape="circle" coords="605,250,55" href="#" alt="Urano" id="areaF"
+                      data-titulo="Urano"
+                      data-descripcion="Urano es el séptimo planeta del sistema solar, conocido por su peculiar inclinación axial que hace que parezca que rota de lado.">
+                <!-- Área 5: Neptuno (Etiqueta G) -->
+                <area shape="circle" coords="755,250,55" href="#" alt="Neptuno" id="areaG"
+                      data-titulo="Neptuno"
+                      data-descripcion="Neptuno es el octavo y más lejano planeta del Sistema Solar, un gigante helado conocido por su color azul intenso y sus fuertes vientos.">
+                <!-- Área 5: Pluton (Etiqueta H) -->
+                <area shape="circle" coords="770,250,55" href="#" alt="Pluton" id="areaH"
+                      data-titulo="Pluton"
+                      data-descripcion="Plutón es un planeta enano en el Sistema Solar, conocido por su descubrimiento en 1930 y su posterior reclasificación como planeta enano en 2006. Antes de esa fecha, era considerado el noveno planeta.">
+                
+            </map>
+        </div>
+    </main>
+
+    <div id="modalDescripcion" class="modal">
+        <div class="modal-contenido">
+            <span class="cerrar-modal">&times;</span>
+            <h2 id="modalTitulo"></h2>
+            <p id="modalDescripcionTexto"></p>
+        </div>
+    </div>
+
+                <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <h4 class="derechos">Derechos de autor 2025/ / / 
+                    <p>Diego Umaña Garita</p>
+                </h4>
+
+            
+            </div>
+
+
+        </div>
+    </footer>
+
+
+
+
+
+
+    <!-- Tu archivo JavaScript -->
+    <script src="/js/reto7.js"></script>
+</body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Configurador de Consolas</title>
+    <link rel="stylesheet" href="css/reto5.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+</head>
+<body>
+
+
+    <header class="header">
+
+        <div class="logo">
+            <h1>Facturas</h1>
+        </div>
+        
+            <ul>
+                <button class="next" id="next"><a href="/reto6.html">Reto 6</a></button>
+            </ul>
+
+    </header>
+
+
+    <div class="contenedor-principal">
+        <h1>Configura Tu Consola Ideal</h1>
+
+        <div class="opciones-consola">
+            <div class="grupo-combo">
+                <label for="comboPlataforma">Selecciona la Plataforma:</label>
+                <select id="comboPlataforma">
+                    <option value="ps">PlayStation</option>
+                    <option value="xbox">Xbox</option>
+                    <option value="nintendo">Nintendo Switch</option>
+                </select>
+            </div>
+
+            <div class="grupo-combo">
+                <label for="comboModelo">Selecciona el Modelo:</label>
+                <select id="comboModelo">
+                    <option value="">Selecciona una plataforma primero</option>
+                </select>
+            </div>
+
+            <button id="botonCalcular">Calcular Precio y Ver Consola</button>
+        </div>
+
+        <div class="resultado-demostracion">
+            <h2>Precio Estimado: <span id="precioTotal">$0.00</span></h2>
+            <div class="contenedor-imagen-consola">
+                <img id="imagenConsola" src="/img/inicial.webp" alt="Imagen de la consola seleccionada">
+            </div>
+            <p id="mensajeSeleccion" class="mensaje"></p>
+        </div>
+    </div>
+
+                <footer class="footer">
+        <div class="footer-contenedor">
+            <div class="footer-contenido">
+                <h4 class="derechos">Derechos de autor 2025/ / / 
+                    <p>Diego Umaña Garita</p>
+                </h4>
+
+            
+            </div>
+
+
+        </div>
+    </footer>
+
+    <script src="/js/reto5.js"></script>
+</body>
+</html>
